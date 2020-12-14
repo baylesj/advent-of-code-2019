@@ -34,7 +34,6 @@ pub fn part_one(input_filename: &str) -> i64 {
     runtime.run_until_halted();
 
     let matrix = get_matrix_from_io(&mut runtime);
-    println!("Matrix: {}", matrix);
 
     // exclude the "walls" from consideration.
     let mut scaffold_intersections = Vec::new();
@@ -69,8 +68,8 @@ pub fn part_two(input_filename: &str) -> i64 {
     runtime.run_until_halted();
     runtime.io.push_back('y' as i64);
     runtime.io.push_back('\n' as i64);
-    let matrix = get_matrix_from_io(&mut runtime);
-    println!("Matrix: {:#?}", matrix);
+    // TODO: finish day 17:
+    let _matrix = get_matrix_from_io(&mut runtime);
     1
 }
 
